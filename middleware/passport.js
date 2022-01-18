@@ -22,10 +22,10 @@ passport.use(
           user.passwordHash
         );
 
-        if (passwordsMatch) {
-          return done(null, user);
-        } else {
+        if (!passwordsMatch) {
           return done("Incorrect email or password provided");
+        } else {
+          return done(null, user);
         }
       } catch (err) {
         done(err);
