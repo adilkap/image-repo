@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       isPrivate: DataTypes.BOOLEAN,
       quantity: DataTypes.INTEGER,
       price: DataTypes.DOUBLE,
-      discountPercentage: DataTypes.FLOAT,
+      discountPercentage: DataTypes.DOUBLE,
       cloudinaryId: DataTypes.STRING,
     },
     {}
